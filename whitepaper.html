@@ -3,263 +3,411 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Go Green Coin (G COIN) | Official Whitepaper V2</title>
 
-<meta name="description" content="Go Green Coin (G COIN) is a community-driven cryptocurrency project built on Solana, focused on transparency, sustainability and decentralized finance.">
+<title>Go Green Coin (G COIN) | Official Whitepaper V3</title>
+
+<meta name="description" content="Official Whitepaper of Go Green Coin (G COIN) - Community Driven Cryptocurrency on Solana.">
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
 
 <style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+scroll-behavior:smooth;
+}
+
 body{
-margin:0;
-font-family:Arial,Helvetica,sans-serif;
-background:#0b1220;
+font-family:'Poppins',sans-serif;
+background:#07140e;
 color:#ffffff;
-line-height:1.7;
+line-height:1.8;
 }
-header{
-background:linear-gradient(135deg,#0f9d58,#00c853);
-padding:70px 20px;
-text-align:center;
-}
-h1{
-font-size:48px;
-margin:0;
-}
-h2{
-color:#4caf50;
-margin-top:50px;
-}
-.container{
-max-width:1100px;
-margin:auto;
-padding:30px;
-}
-.card{
-background:#162033;
-padding:25px;
-border-radius:12px;
-margin:25px 0;
-}
-table{
-width:100%;
-border-collapse:collapse;
-}
-td{
-padding:12px;
-border:1px solid #333;
-}
-.button{
-display:inline-block;
-padding:12px 24px;
-background:#00c853;
-color:white;
+
+a{
 text-decoration:none;
-border-radius:8px;
-margin:10px;
+color:#8dfc53;
 }
-footer{
+
+header{
+
+background:linear-gradient(135deg,#0b3d20,#0d6f3a);
+
+padding:90px 20px;
+
 text-align:center;
-padding:40px;
-background:#08111d;
-margin-top:60px;
+
+border-bottom:3px solid #18d45d;
+
 }
+
+.logo{
+
+width:170px;
+
+height:170px;
+
+border-radius:50%;
+
+border:5px solid #2cff71;
+
+box-shadow:0 0 40px #00ff88;
+
+margin-bottom:25px;
+
+}
+
+h1{
+
+font-size:55px;
+
+font-weight:800;
+
+margin-bottom:10px;
+
+}
+
+.subtitle{
+
+font-size:26px;
+
+font-weight:600;
+
+color:#b7ff6b;
+
+margin-bottom:20px;
+
+}
+
+.description{
+
+max-width:900px;
+
+margin:auto;
+
+font-size:20px;
+
+color:#d8d8d8;
+
+}
+
+nav{
+
+background:#0b2416;
+
+padding:18px;
+
+position:sticky;
+
+top:0;
+
+z-index:999;
+
+display:flex;
+
+justify-content:center;
+
+gap:30px;
+
+flex-wrap:wrap;
+
+border-bottom:1px solid #18d45d;
+
+}
+
+nav a{
+
+color:white;
+
+font-weight:600;
+
+transition:.3s;
+
+}
+
+nav a:hover{
+
+color:#8dfc53;
+
+}
+
+.container{
+
+width:95%;
+
+max-width:1250px;
+
+margin:auto;
+
+padding:60px 0;
+
+}
+
+.card{
+
+background:#11291b;
+
+padding:35px;
+
+margin-bottom:35px;
+
+border-radius:20px;
+
+border:1px solid #1f6a3d;
+
+box-shadow:0 0 20px rgba(0,255,120,.12);
+
+}
+
+h2{
+
+font-size:34px;
+
+margin-bottom:20px;
+
+color:#8dfc53;
+
+}
+
+h3{
+
+font-size:25px;
+
+margin-bottom:15px;
+
+color:#ffffff;
+
+}
+
+.grid{
+
+display:grid;
+
+grid-template-columns:repeat(auto-fit,minmax(320px,1fr));
+
+gap:25px;
+
+}
+
+.btn{
+
+display:inline-block;
+
+background:#16b84e;
+
+padding:14px 30px;
+
+border-radius:12px;
+
+font-weight:bold;
+
+margin-top:25px;
+
+color:white;
+
+transition:.3s;
+
+}
+
+.btn:hover{
+
+background:#1fdd61;
+
+transform:translateY(-3px);
+
+}
+
+.social{
+
+display:flex;
+
+justify-content:center;
+
+gap:18px;
+
+flex-wrap:wrap;
+
+margin-top:35px;
+
+}
+
+.social a{
+
+background:#143822;
+
+padding:12px 18px;
+
+border-radius:10px;
+
+color:white;
+
+}
+
+.social a:hover{
+
+background:#18d45d;
+
+}
+
+.hero-badge{
+
+display:inline-block;
+
+background:#18d45d;
+
+color:#07140e;
+
+padding:10px 18px;
+
+border-radius:40px;
+
+font-weight:700;
+
+margin-bottom:20px;
+
+}
+
+.highlight{
+
+color:#8dfc53;
+
+font-weight:bold;
+
+}
+
+@media(max-width:768px){
+
+h1{
+
+font-size:38px;
+
+}
+
+.subtitle{
+
+font-size:21px;
+
+}
+
+.description{
+
+font-size:17px;
+
+}
+
+.logo{
+
+width:130px;
+
+height:130px;
+
+}
+
+}
+
 </style>
+
 </head>
 
 <body>
 
 <header>
 
-<h1>Go Green Coin (G COIN)</h1>
+<div class="hero-badge">
 
-<p>Building a Transparent & Sustainable Web3 Future on Solana.</p>
+🚀 OFFICIAL WHITEPAPER V3
 
-<a class="button" href="https://x.com/gogreencoinx">Official X</a>
+</div>
 
-<a class="button" href="https://t.me/GCoinOfficialGroup">Telegram</a>
+<img src="logo.png" class="logo">
+
+<h1>GO GREEN COIN</h1>
+
+<div class="subtitle">
+
+Built By Community • Driven By Vision
+
+</div>
+
+<p class="description">
+
+Go Green Coin (G COIN) is a transparent, community-powered cryptocurrency built on the Solana blockchain. Our mission is to create a secure, fair-launch ecosystem that rewards long-term holders, encourages innovation and supports sustainable Web3 development.
+
+</p>
+
+<div class="social">
+
+<a href="#"><i class="fab fa-x-twitter"></i> X</a>
+
+<a href="#"><i class="fab fa-telegram"></i> Telegram</a>
+
+<a href="#"><i class="fas fa-globe"></i> Website</a>
+
+</div>
+
+<a class="btn" href="#mission">
+
+Explore Whitepaper
+
+</a>
 
 </header>
 
+<nav>
+
+<a href="#mission">Mission</a>
+
+<a href="#vision">Vision</a>
+
+<a href="#tokenomics">Tokenomics</a>
+
+<a href="#distribution">Distribution</a>
+
+<a href="#roadmap">Roadmap</a>
+
+<a href="#contact">Contact</a>
+
+</nav>
+
 <div class="container">
 
-<div class="card">
+<section id="mission" class="card">
 
-<h2>Project Overview</h2>
-
-<p>
-
-Go Green Coin (G COIN) is a community-driven cryptocurrency project designed to promote transparency, decentralization and sustainable blockchain innovation using the Solana ecosystem.
-
-</p>
-
-</div>
-
-<div class="card">
-
-<h2>Vision</h2>
+<h2><i class="fas fa-bullseye"></i> Our Mission</h2>
 
 <p>
 
-To build an open, trusted and globally accessible digital financial ecosystem powered by blockchain technology.
+G Coin is more than just a cryptocurrency.
+
+It is a community movement focused on transparency,
+
+innovation, decentralization and real-world utility.
+
+Every decision is designed to strengthen the ecosystem,
+
+empower holders and build long-term value.
 
 </p>
 
-</div>
+</section>
 
-<div class="card">
+<section id="vision" class="card">
 
-<h2>Mission</h2>
-
-<ul>
-
-<li>Community First</li>
-
-<li>Transparency</li>
-
-<li>Open Source Development</li>
-
-<li>Fast & Low-cost Transactions</li>
-
-<li>Sustainable Web3 Innovation</li>
-
-</ul>
-
-</div>
-
-<div class="card">
-
-<h2>Token Information</h2>
-
-<table>
-
-<tr><td>Name</td><td>Go Green Coin</td></tr>
-
-<tr><td>Symbol</td><td>G COIN</td></tr>
-
-<tr><td>Blockchain</td><td>Solana</td></tr>
-
-<tr><td>Type</td><td>SPL Token</td></tr>
-
-<tr><td>Status</td><td>Community Driven</td></tr>
-
-</table>
-
-</div>
-
-<div class="card">
-
-<h2>Roadmap</h2>
-
-<ul>
-
-<li>✅ Whitepaper V2</li>
-
-<li>✅ Official Website</li>
-
-<li>🔄 Community Growth</li>
-
-<li>🔄 CoinGecko Listing</li>
-
-<li>🔄 CoinMarketCap Listing</li>
-
-<li>🔄 CEX Listing</li>
-
-<li>🔄 DeFi Utilities</li>
-
-<li>🔄 NFT Ecosystem</li>
-
-</ul>
-
-</div>
-
-<div class="card">
-
-<h2>Security</h2>
+<h2><i class="fas fa-eye"></i> Our Vision</h2>
 
 <p>
 
-Security, transparency and community governance are the core principles of Go Green Coin.
+To become one of the most trusted community-driven
+
+digital assets on Solana by combining sustainability,
+
+fair tokenomics, open governance and global adoption.
 
 </p>
 
-</div>
-
-<div class="card">
-
-<h2>Official Links</h2>
-
-<p>
-
-Website:<br>
-
-https://gogreencoin-g.github.io/gogreencoin/
-
-</p>
-
-<p>
-
-GitHub:<br>
-
-https://github.com/gogreencoin-G/gogreencoin
-
-</p>
-
-<p>
-
-X (Twitter):<br>
-
-https://x.com/gogreencoinx
-
-</p>
-
-<p>
-
-Telegram Channel:<br>
-
-https://t.me/Gcoinmeme
-
-</p>
-
-<p>
-
-Telegram Community:<br>
-
-https://t.me/GCoinOfficialGroup
-
-</p>
-
-<p>
-
-Email:<br>
-
-gogreengcoin@gmail.com
-
-</p>
-
-</div>
-
-<div class="card">
-
-<h2>Disclaimer</h2>
-
-<p>
-
-This project is for educational and community purposes.
-
-Cryptocurrency investments involve risk.
-
-Always Do Your Own Research (DYOR).
-
-</p>
-
-</div>
-
-</div>
-
-<footer>
-
-© 2026 Go Green Coin (G COIN). All Rights Reserved.
-
-</footer>
-
-</body>
-</html>
+</section>
