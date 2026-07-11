@@ -1,1 +1,722 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+<title>Go Green Coin (G COIN) | Official Whitepaper V3</title>
+
+<meta name="description" content="Official Whitepaper of Go Green Coin (G COIN) - Community Driven Cryptocurrency on Solana.">
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+scroll-behavior:smooth;
+}
+
+body{
+font-family:'Poppins',sans-serif;
+background:#07140e;
+color:#ffffff;
+line-height:1.8;
+}
+
+a{
+text-decoration:none;
+color:#8dfc53;
+}
+
+header{
+
+background:linear-gradient(135deg,#0b3d20,#0d6f3a);
+
+padding:90px 20px;
+
+text-align:center;
+
+border-bottom:3px solid #18d45d;
+
+}
+
+.logo{
+
+width:170px;
+
+height:170px;
+
+border-radius:50%;
+
+border:5px solid #2cff71;
+
+box-shadow:0 0 40px #00ff88;
+
+margin-bottom:25px;
+
+}
+
+h1{
+
+font-size:55px;
+
+font-weight:800;
+
+margin-bottom:10px;
+
+}
+
+.subtitle{
+
+font-size:26px;
+
+font-weight:600;
+
+color:#b7ff6b;
+
+margin-bottom:20px;
+
+}
+
+.description{
+
+max-width:900px;
+
+margin:auto;
+
+font-size:20px;
+
+color:#d8d8d8;
+
+}
+
+nav{
+
+background:#0b2416;
+
+padding:18px;
+
+position:sticky;
+
+top:0;
+
+z-index:999;
+
+display:flex;
+
+justify-content:center;
+
+gap:30px;
+
+flex-wrap:wrap;
+
+border-bottom:1px solid #18d45d;
+
+}
+
+nav a{
+
+color:white;
+
+font-weight:600;
+
+transition:.3s;
+
+}
+
+nav a:hover{
+
+color:#8dfc53;
+
+}
+
+.container{
+
+width:95%;
+
+max-width:1250px;
+
+margin:auto;
+
+padding:60px 0;
+
+}
+
+.card{
+
+background:#11291b;
+
+padding:35px;
+
+margin-bottom:35px;
+
+border-radius:20px;
+
+border:1px solid #1f6a3d;
+
+box-shadow:0 0 20px rgba(0,255,120,.12);
+
+}
+
+h2{
+
+font-size:34px;
+
+margin-bottom:20px;
+
+color:#8dfc53;
+
+}
+
+h3{
+
+font-size:25px;
+
+margin-bottom:15px;
+
+color:#ffffff;
+
+}
+
+.grid{
+
+display:grid;
+
+grid-template-columns:repeat(auto-fit,minmax(320px,1fr));
+
+gap:25px;
+
+}
+
+.btn{
+
+display:inline-block;
+
+background:#16b84e;
+
+padding:14px 30px;
+
+border-radius:12px;
+
+font-weight:bold;
+
+margin-top:25px;
+
+color:white;
+
+transition:.3s;
+
+}
+
+.btn:hover{
+
+background:#1fdd61;
+
+transform:translateY(-3px);
+
+}
+
+.social{
+
+display:flex;
+
+justify-content:center;
+
+gap:18px;
+
+flex-wrap:wrap;
+
+margin-top:35px;
+
+}
+
+.social a{
+
+background:#143822;
+
+padding:12px 18px;
+
+border-radius:10px;
+
+color:white;
+
+}
+
+.social a:hover{
+
+background:#18d45d;
+
+}
+
+.hero-badge{
+
+display:inline-block;
+
+background:#18d45d;
+
+color:#07140e;
+
+padding:10px 18px;
+
+border-radius:40px;
+
+font-weight:700;
+
+margin-bottom:20px;
+
+}
+
+.highlight{
+
+color:#8dfc53;
+
+font-weight:bold;
+
+}
+
+@media(max-width:768px){
+
+h1{
+
+font-size:38px;
+
+}
+
+.subtitle{
+
+font-size:21px;
+
+}
+
+.description{
+
+font-size:17px;
+
+}
+
+.logo{
+
+width:130px;
+
+height:130px;
+
+}
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+<header>
+
+<div class="hero-badge">
+
+🚀 OFFICIAL WHITEPAPER V3
+
+</div>
+
+<img src="logo.png" class="logo">
+
+<h1>GO GREEN COIN</h1>
+
+<div class="subtitle">
+
+Built By Community • Driven By Vision
+
+</div>
+
+<p class="description">
+
+Go Green Coin (G COIN) is a transparent, community-powered cryptocurrency built on the Solana blockchain. Our mission is to create a secure, fair-launch ecosystem that rewards long-term holders, encourages innovation and supports sustainable Web3 development.
+
+</p>
+
+<div class="social">
+
+<a href="#"><i class="fab fa-x-twitter"></i> X</a>
+
+<a href="#"><i class="fab fa-telegram"></i> Telegram</a>
+
+<a href="#"><i class="fas fa-globe"></i> Website</a>
+
+</div>
+
+<a class="btn" href="#mission">
+
+Explore Whitepaper
+
+</a>
+
+</header>
+
+<nav>
+
+<a href="#mission">Mission</a>
+
+<a href="#vision">Vision</a>
+
+<a href="#tokenomics">Tokenomics</a>
+
+<a href="#distribution">Distribution</a>
+
+<a href="#roadmap">Roadmap</a>
+
+<a href="#contact">Contact</a>
+
+</nav>
+
+<div class="container">
+
+<section id="mission" class="card">
+
+<h2><i class="fas fa-bullseye"></i> Our Mission</h2>
+
+<p>
+
+G Coin is more than just a cryptocurrency.
+
+It is a community movement focused on transparency,
+
+innovation, decentralization and real-world utility.
+
+Every decision is designed to strengthen the ecosystem,
+
+empower holders and build long-term value.
+
+</p>
+
+</section>
+
+<section id="vision" class="card">
+
+<h2><i class="fas fa-eye"></i> Our Vision</h2>
+
+<p>
+
+To become one of the most trusted community-driven
+
+digital assets on Solana by combining sustainability,
+
+fair tokenomics, open governance and global adoption.
+
+</p>
+
+</section>
+<section id="tokenomics" class="card">
+
+<h2><i class="fas fa-chart-pie"></i> Tokenomics</h2>
+
+<table>
+
+<tr>
+<th>Category</th>
+<th>Allocation</th>
+<th>Amount (G COIN)</th>
+</tr>
+
+<tr>
+<td>Public Trading / Community</td>
+<td>70%</td>
+<td>700,000,000</td>
+</tr>
+
+<tr>
+<td>Ecosystem & Treasury</td>
+<td>10%</td>
+<td>100,000,000</td>
+</tr>
+
+<tr>
+<td>Marketing & Partnerships</td>
+<td>8%</td>
+<td>80,000,000</td>
+</tr>
+
+<tr>
+<td>Development Fund</td>
+<td>7%</td>
+<td>70,000,000</td>
+</tr>
+
+<tr>
+<td>Team</td>
+<td>5%</td>
+<td>50,000,000</td>
+</tr>
+
+<tr style="font-weight:bold;background:#123b24;">
+<td>Total Supply</td>
+<td>100%</td>
+<td>1,000,000,000</td>
+</tr>
+
+</table>
+
+<p style="margin-top:20px">
+
+<span class="highlight">70%</span> of the total supply is allocated to the community through a fair launch mechanism. No presale, no private sale and no insider allocation.
+
+</p>
+
+</section>
+
+<section id="distribution" class="card">
+
+<h2><i class="fas fa-layer-group"></i> Distribution Overview</h2>
+
+<ul>
+
+<li><b>70%</b> — Public Trading & Community Liquidity.</li>
+
+<li><b>10%</b> — Ecosystem growth, grants, DAO and treasury.</li>
+
+<li><b>8%</b> — Marketing campaigns, partnerships and community expansion.</li>
+
+<li><b>7%</b> — Product development, audits and infrastructure.</li>
+
+<li><b>5%</b> — Core team with long-term vesting.</li>
+
+</ul>
+
+</section>
+
+<section class="card">
+
+<h2><i class="fas fa-lock"></i> Vesting Schedule</h2>
+
+<table>
+
+<tr>
+<th>Category</th>
+<th>Cliff</th>
+<th>Vesting</th>
+</tr>
+
+<tr>
+<td>Team</td>
+<td>6–12 Months</td>
+<td>18–24 Months</td>
+</tr>
+
+<tr>
+<td>Marketing</td>
+<td>No Cliff</td>
+<td>12 Months</td>
+</tr>
+
+<tr>
+<td>Development</td>
+<td>No Cliff</td>
+<td>24 Months</td>
+</tr>
+
+<tr>
+<td>Treasury</td>
+<td>No Cliff</td>
+<td>36 Months</td>
+</tr>
+
+<tr>
+<td>Community</td>
+<td>Unlocked</td>
+<td>Fair Launch</td>
+</tr>
+
+</table>
+
+</section>
+<section class="card">
+
+<h2><i class="fas fa-coins"></i> Use of Funds</h2>
+
+<ul>
+<li>✅ Liquidity Provision</li>
+<li>✅ Ecosystem Development</li>
+<li>✅ Community Rewards & Airdrops</li>
+<li>✅ Grants & DAO Initiatives</li>
+<li>✅ CEX & DEX Listings</li>
+<li>✅ Marketing & Partnerships</li>
+<li>✅ Product & Utility Development</li>
+</ul>
+
+</section>
+
+<section id="roadmap" class="card">
+
+<h2><i class="fas fa-road"></i> Roadmap 2026–2027</h2>
+
+<table>
+
+<tr>
+<th>Quarter</th>
+<th>Milestone</th>
+</tr>
+
+<tr>
+<td>Q2 2026</td>
+<td>Launch on Pump.fun</td>
+</tr>
+
+<tr>
+<td>Q3 2026</td>
+<td>Graduate to Raydium</td>
+</tr>
+
+<tr>
+<td>Q4 2026</td>
+<td>Marketing Campaign & Community Building</td>
+</tr>
+
+<tr>
+<td>Q1 2027</td>
+<td>CEX Listings & Global Expansion</td>
+</tr>
+
+<tr>
+<td>Q2 2027</td>
+<td>Strategic Partnerships</td>
+</tr>
+
+<tr>
+<td>Q3 2027</td>
+<td>Utility Products & Ecosystem Growth</td>
+</tr>
+
+<tr>
+<td>Q4 2027</td>
+<td>Mass Adoption & Long-Term Sustainability</td>
+</tr>
+
+</table>
+
+</section>
+
+<section class="card">
+
+<h2><i class="fas fa-gears"></i> How It Works</h2>
+
+<ol>
+
+<li>Create the G COIN token on Pump.fun.</li>
+
+<li>Community purchases tokens through the bonding curve.</li>
+
+<li>Market cap grows and liquidity increases.</li>
+
+<li>The token graduates to Raydium.</li>
+
+<li>Trading becomes fully available on Raydium.</li>
+
+<li>DEX Screener automatically indexes the token.</li>
+
+<li>Future expansion to major centralized exchanges (CEX).</li>
+
+</ol>
+
+</section>
+<section class="card">
+
+<h2><i class="fas fa-file-signature"></i> Contract Address</h2>
+
+<div style="background:#10261a;padding:20px;border-radius:10px;word-break:break-all;">
+
+<span id="contract">
+
+Gxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+
+</span>
+
+</div>
+
+<button class="btn" onclick="copyContract()">
+
+<i class="fas fa-copy"></i> Copy Contract Address
+
+</button>
+
+<p style="margin-top:15px;color:#8dfc53;">
+Replace the placeholder above with your official Solana contract after launch.
+</p>
+
+</section>
+
+<section class="card">
+
+<h2><i class="fas fa-qrcode"></i> Official QR Code</h2>
+
+<div style="text-align:center;">
+
+<img src="qr.png" alt="QR Code" style="max-width:220px;width:100%;border-radius:12px;">
+
+<p style="margin-top:15px;">
+Scan to visit the official G COIN website or DEX page.
+</p>
+
+</div>
+
+</section>
+
+<section id="contact" class="card">
+
+<h2><i class="fas fa-circle-info"></i> Important Notes</h2>
+
+<ul>
+
+<li>✔ Fair Launch — No Presale.</li>
+
+<li>✔ Community Driven.</li>
+
+<li>✔ Built on Solana.</li>
+
+<li>✔ Long-term ecosystem growth.</li>
+
+<li>✔ Treasury transparency.</li>
+
+<li>✔ Secure smart contract.</li>
+
+<li>✔ Liquidity locked after launch.</li>
+
+</ul>
+
+</section>
+
+<footer style="text-align:center;padding:50px 20px;">
+
+<h2>GO GREEN COIN</h2>
+
+<p>One Community • One Goal • One Future</p>
+
+<p style="margin-top:15px;">
+
+© 2026 G COIN. All Rights Reserved.
+
+</p>
+
+</footer>
+
+<script>
+
+function copyContract(){
+
+const text=document.getElementById("contract").innerText;
+
+navigator.clipboard.writeText(text);
+
+alert("Contract Address Copied!");
+
+}
+
+</script>
+
+</body>
+
+</html>
