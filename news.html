@@ -342,18 +342,29 @@ Official X Feed
 <p style="margin-bottom:25px;">
 Follow our official X account for the latest announcements and campaign updates.
 </p>
-
-<div id="x-feed" style="min-height:600px;">
-    <a class="twitter-timeline"
-       data-theme="dark"
-       data-height="600"
-       data-chrome="noheader nofooter transparent"
-       href="https://twitter.com/gogreencoinx">
-       Tweets by @gogreencoinx
-    </a>
-</div>
+<div id="x-feed"></div>
 
 <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+<script>
+window.onload = function () {
+    if (window.twttr && twttr.widgets) {
+        twttr.widgets.createTimeline(
+            {
+                sourceType: "profile",
+                screenName: "gogreencoinx"
+            },
+            document.getElementById("x-feed"),
+            {
+                theme: "dark",
+                height: 600,
+                chrome: "noheader nofooter transparent"
+            }
+        );
+    }
+};
+</script>
+
 </section>
 
 <section id="videos" class="card">
