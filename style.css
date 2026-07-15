@@ -1,1 +1,892 @@
+/* ==========================================
+   GO GREEN (G Coin)
+   Premium Website v2.0
+   Part 1
+========================================== */
 
+/* Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
+
+/* Reset */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    scroll-behavior:smooth;
+}
+
+html{
+    overflow-x:hidden;
+}
+
+body{
+
+    font-family:'Poppins',sans-serif;
+
+    background:#07150c;
+
+    color:#ffffff;
+
+    overflow-x:hidden;
+
+    line-height:1.7;
+
+}
+
+/* Variables */
+
+:root{
+
+--primary:#22c55e;
+
+--secondary:#16a34a;
+
+--dark:#07150c;
+
+--dark2:#0d1d13;
+
+--card:#12261a;
+
+--border:rgba(255,255,255,.08);
+
+--text:#d7e8dc;
+
+--white:#ffffff;
+
+--shadow:0 10px 30px rgba(0,0,0,.35);
+
+}
+
+/* Container */
+
+.container{
+
+width:90%;
+
+max-width:1280px;
+
+margin:auto;
+
+}
+
+/* Links */
+
+a{
+
+text-decoration:none;
+
+color:inherit;
+
+transition:.3s;
+
+}
+
+/* Images */
+
+img{
+
+max-width:100%;
+
+display:block;
+
+}
+
+/* Sections */
+
+.section{
+
+padding:90px 0;
+
+}
+
+/* Headings */
+
+h1,h2,h3,h4{
+
+font-weight:700;
+
+color:#fff;
+
+}
+
+/* Paragraph */
+
+p{
+
+color:var(--text);
+
+}
+
+/* Section Title */
+
+.section-title{
+
+text-align:center;
+
+margin-bottom:60px;
+
+}
+
+.section-title h2{
+
+font-size:42px;
+
+margin-bottom:15px;
+
+}
+
+.section-title p{
+
+max-width:760px;
+
+margin:auto;
+
+}
+
+/* Buttons */
+
+.btn{
+
+display:inline-flex;
+
+align-items:center;
+
+gap:10px;
+
+padding:14px 28px;
+
+border-radius:50px;
+
+font-weight:600;
+
+transition:.35s;
+
+cursor:pointer;
+
+}
+
+.btn-primary{
+
+background:var(--primary);
+
+color:#fff;
+
+}
+
+.btn-primary:hover{
+
+background:#1db954;
+
+transform:translateY(-3px);
+
+}
+
+.btn-secondary{
+
+border:2px solid var(--primary);
+
+color:#fff;
+
+background:transparent;
+
+}
+
+.btn-secondary:hover{
+
+background:var(--primary);
+
+}
+
+.btn-tree{
+
+background:#2e7d32;
+
+color:#fff;
+
+}
+
+.btn-tree:hover{
+
+background:#3fa948;
+
+}
+
+/* Header */
+
+header{
+
+position:fixed;
+
+top:0;
+
+left:0;
+
+width:100%;
+
+z-index:999;
+
+background:rgba(7,21,12,.90);
+
+backdrop-filter:blur(14px);
+
+border-bottom:1px solid var(--border);
+
+}
+
+/* Navigation */
+
+nav{
+
+display:flex;
+
+justify-content:space-between;
+
+align-items:center;
+
+height:82px;
+
+}
+
+/* Logo */
+
+.logo{
+
+display:flex;
+
+align-items:center;
+
+gap:12px;
+
+font-size:24
+ /* ==========================================
+   HERO SECTION
+========================================== */
+
+.hero{
+
+min-height:100vh;
+
+display:flex;
+
+align-items:center;
+
+background:
+linear-gradient(rgba(7,21,12,.88),rgba(7,21,12,.92)),
+radial-gradient(circle at top right,#1e7f4d33,transparent 45%),
+radial-gradient(circle at bottom left,#22c55e22,transparent 45%);
+
+}
+
+.hero-content{
+
+display:grid;
+
+grid-template-columns:1.1fr .9fr;
+
+align-items:center;
+
+gap:60px;
+
+}
+
+/* Badge */
+
+.badge{
+
+display:inline-block;
+
+padding:10px 20px;
+
+background:rgba(34,197,94,.12);
+
+border:1px solid rgba(34,197,94,.35);
+
+color:#8ff7b2;
+
+border-radius:40px;
+
+font-size:14px;
+
+margin-bottom:25px;
+
+}
+
+/* Hero Title */
+
+.hero h1{
+
+font-size:64px;
+
+line-height:1.1;
+
+margin-bottom:25px;
+
+font-weight:800;
+
+}
+
+.hero h1 span{
+
+color:var(--primary);
+
+}
+
+/* Hero Text */
+
+.hero p{
+
+font-size:18px;
+
+margin-bottom:35px;
+
+max-width:650px;
+
+}
+
+/* Buttons */
+
+.hero-buttons{
+
+display:flex;
+
+flex-wrap:wrap;
+
+gap:18px;
+
+margin-bottom:45px;
+
+}
+
+/* Stats */
+
+.hero-stats{
+
+display:grid;
+
+grid-template-columns:repeat(4,1fr);
+
+gap:18px;
+
+margin-top:20px;
+
+}
+
+.stat-box{
+
+background:rgba(255,255,255,.05);
+
+border:1px solid rgba(255,255,255,.08);
+
+border-radius:18px; 
+/* ==========================================
+   ABOUT SECTION
+========================================== */
+
+.about{
+
+background:#0b1b11;
+
+}
+
+.about-grid{
+
+display:grid;
+
+grid-template-columns:repeat(3,1fr);
+
+gap:30px;
+
+margin-top:40px;
+
+}
+
+.about-card{
+
+background:var(--card);
+
+padding:35px;
+
+border-radius:20px;
+
+border:1px solid var(--border);
+
+text-align:center;
+
+transition:.35s;
+
+box-shadow:var(--shadow);
+
+}
+
+.about-card:hover{
+
+transform:translateY(-10px);
+
+border-color:var(--primary);
+
+box-shadow:0 15px 40px rgba(34,197,94,.18);
+
+}
+
+.about-card .icon{
+
+width:80px;
+
+height:80px;
+
+margin:0 auto 20px;
+
+border-radius:50%;
+
+display:flex;
+
+align-items:center;
+
+justify-content:center;
+
+font-size:34px;
+
+background:rgba(34,197,94,.12);
+
+color:var(--primary);
+
+}
+
+.about-card h3{
+
+margin-bottom:15px;
+
+font-size:24px;
+
+}
+
+.about-card p{
+
+font-size:15px;
+
+color:var(--text);
+
+}
+
+/* ==========================================
+   ECOSYSTEM SECTION
+========================================== */
+
+.ecosystem{
+
+background:#07150c;
+
+}
+
+.eco-grid{
+
+display:grid;
+
+grid-template-columns:repeat(3,1fr);
+
+gap:30px;
+
+margin-top:40px;
+
+}
+
+.eco-card{
+
+background:linear-gradient(180deg,#12261a,#0d1d13);
+
+border:1px solid var(--border);
+
+padding:35px;
+
+border-radius:22px;
+
+text-align:center;
+
+transition:.35s;
+
+position:relative;
+
+overflow:hidden;
+
+box-shadow:var(--shadow);
+
+}
+
+.eco-card::before{
+
+content:"";
+
+position:absolute;
+
+top:0;
+
+left:-100%;
+
+width:100%;
+
+height:4px;
+
+background:var(--primary);
+
+transition:.4s;
+
+}
+
+.eco-card:hover::before{
+
+left:0;
+
+}
+
+.eco-card:hover{
+
+transform:translateY(-10px);
+
+border-color:var(--primary);
+
+}
+
+.eco-card i{
+
+font-size:42px;
+
+margin-bottom:20
+ /* ==========================================
+   TOKEN UTILITY SECTION
+========================================== */
+
+.token-utility{
+
+background:#0b1b11;
+
+}
+
+.utility-grid{
+
+display:grid;
+
+grid-template-columns:repeat(3,1fr);
+
+gap:30px;
+
+margin-top:40px;
+
+}
+
+.utility-card{
+
+background:linear-gradient(180deg,#12261a,#0d1d13);
+
+padding:35px;
+
+border-radius:20px;
+
+border:1px solid var(--border);
+
+text-align:center;
+
+transition:.35s;
+
+box-shadow:var(--shadow);
+
+}
+
+.utility-card:hover{
+
+transform:translateY(-10px);
+
+border-color:var(--primary);
+
+box-shadow:0 18px 40px rgba(34,197,94,.18);
+
+}
+
+.utility-card i{
+
+font-size:42px;
+
+margin-bottom:20px;
+
+color:var(--primary);
+
+}
+
+.utility-card h3{
+
+margin-bottom:15px;
+
+font-size:24px;
+
+}
+
+.utility-card p{
+
+font-size:15px;
+
+color:var(--text);
+
+}
+
+/* ==========================================
+   TOKENOMICS
+========================================== */
+
+.tokenomics{
+
+background:#07150c;
+
+}
+
+.tokenomics-grid{
+
+display:grid;
+
+grid-template-columns:1fr  
+/* ==========================================
+   ROADMAP SECTION
+========================================== */
+
+.roadmap{
+    background:#07150c;
+}
+
+.timeline{
+    position:relative;
+    max-width:1000px;
+    margin:50px auto 0;
+}
+
+.timeline::before{
+    content:"";
+    position:absolute;
+    left:50%;
+    top:0;
+    width:4px;
+    height:100%;
+    background:var(--primary);
+    transform:translateX(-50%);
+}
+
+.timeline-item{
+    width:50%;
+    padding:20px 40px;
+    position:relative;
+}
+
+.timeline-item:nth-child(odd){
+    left:0;
+    text-align:right;
+}
+
+.timeline-item:nth-child(even){
+    left:50%;
+}
+
+.timeline-content{
+    background:linear-gradient(180deg,#12261a,#0d1d13);
+    padding:25px;
+    border-radius:18px;
+    border:1px solid var(--border);
+    box-shadow:var(--shadow);
+    transition:.35s;
+}
+
+.timeline-content:hover{
+    transform:translateY(-8px);
+    border-color:var(--primary);
+}
+
+.timeline-year{
+    display:inline-block;
+    padding:8px 18px;
+    border-radius:30px;
+    background:var(--primary);
+    color:#fff;
+    font-weight:700;
+    margin-bottom:15px;
+}
+
+/* ==========================================
+   TREE CUSTODIANSHIP
+========================================== */
+
+.tree{
+    background:#0b1b11;
+}
+
+.tree-wrapper{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:50px;
+    align-items:center;
+}
+
+.tree-left img{
+    width:100%;
+    border-radius:20px;
+    border:2px solid rgba(255,255,255,.08);
+    box-shadow:0 15px 40px rgba(0,0,0,.35);
+}
+
+.tree-right h3{
+    font-size:36px;
+    margin-bottom:20px;
+}
+
+.tree-right p{
+    margin-bottom:25px;
+}
+
+.tree-list{
+    list-style:none;
+    margin-bottom:35px;
+}
+
+.tree-list li{
+    margin-bottom:15px;
+    font-size:16px;
+    color:var(--text);
+}
+
+/* ==========================================
+   ECOSYSTEM PROGRESS
+========================================== */
+
+.progress-section{
+    background:#07150c;
+}
+
+.progress-card{
+    max-width:900px;
+    margin:auto;
+}
+
+.progress-item{
+    margin-bottom:28px;
+}
+
+.progress-item span{
+    display:block;
+    margin-bottom:10px;
+    font-weight:600;
+}
+
+progress{
+    width:100%;
+    height:18px;
+    border-radius:20px;
+    overflow:hidden;
+}
+
+progress::-webkit-progress-bar{
+    background:#1a2e21;
+    border-radius:20px;
+}
+
+progress::-webkit-progress-value{
+    background:linear 
+ /* ==========================================
+   GALLERY
+========================================== */
+
+.gallery{
+    background:#0b1b11;
+}
+
+.gallery-grid{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:25px;
+    margin-top:40px;
+}
+
+.gallery-item{
+    overflow:hidden;
+    border-radius:18px;
+    border:1px solid var(--border);
+    box-shadow:var(--shadow);
+}
+
+.gallery-item img{
+    width:100%;
+    height:280px;
+    object-fit:cover;
+    transition:.5s;
+}
+
+.gallery-item:hover img{
+    transform:scale(1.08);
+}
+
+/* ==========================================
+   NEWS / X FEED
+========================================== */
+
+.news{
+    background:#07150c;
+}
+
+.news-wrapper{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:35px;
+}
+
+.news-card,
+.x-feed{
+    background:var(--card);
+    padding:30px;
+    border-radius:20px;
+    border:1px solid var(--border);
+    box-shadow:var(--shadow);
+}
+
+.news-card ul{
+    list-style:none;
+    margin-top:20px;
+}
+
+.news-card li{
+    margin-bottom:15px;
+    color:var(--text);
+}
+
+/* ==========================================
+   FAQ
+========================================== */
+
+.faq{
+    background:#0b1b11;
+}
+
+.faq-container{
+    max-width:900px;
+    margin:auto;
+}
+
+.faq-item{
+    background:var(--card);
+    border:1px solid var(--border);
+    padding:25px;
+    border-radius:16px;
+    margin-bottom:20px;
+}
+
+.faq-item h3{
+    margin-bottom:12px;
+}
+
+/* ==========================================
+   COMMUNITY CTA
+========================================== */
+
+.community{
+    background:linear-gradient(135deg,#0d1d13,#163822);
+}
+
+.community-box{
+    text-align:center;
+    padding:70px 30px;
+    border-radius:25 
+  
