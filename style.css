@@ -890,3 +890,127 @@ progress::-webkit-progress-value{
     padding:70px 30px;
     border-radius:25 
   
+/* ==========================================
+   BUG FIX PART 1
+   Mobile Header + Navigation
+========================================== */
+
+/* Header */
+header{
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    z-index:9999;
+    background:rgba(7,21,12,.95);
+    backdrop-filter:blur(12px);
+}
+
+/* Prevent hero from hiding behind header */
+.hero{
+    padding-top:120px;
+}
+
+/* Logo */
+.logo{
+    display:flex;
+    align-items:center;
+    gap:12px;
+    text-decoration:none;
+    color:#fff;
+    font-weight:700;
+}
+
+.logo img{
+    width:48px;
+    height:48px;
+    object-fit:contain;
+}
+
+/* Navigation */
+
+.nav-links{
+    display:flex;
+    gap:28px;
+    list-style:none;
+    align-items:center;
+}
+
+.nav-links li{
+    list-style:none;
+}
+
+.nav-links a{
+    color:#fff;
+    text-decoration:none;
+    transition:.3s;
+}
+
+.nav-links a:hover{
+    color:#22c55e;
+}
+
+/* Hamburger */
+
+.menu-btn{
+    display:none;
+    cursor:pointer;
+    font-size:28px;
+    color:#fff;
+}
+
+/* ==============================
+   Mobile
+============================== */
+
+@media (max-width:992px){
+
+.menu-btn{
+display:block;
+}
+
+.nav-links{
+
+position:absolute;
+top:100%;
+left:0;
+
+width:100%;
+
+background:#08150d;
+
+display:none;
+
+flex-direction:column;
+
+padding:25px;
+
+gap:18px;
+
+border-top:1px solid rgba(255,255,255,.08);
+
+}
+
+.nav-links.active{
+
+display:flex;
+
+}
+
+.nav-links li{
+
+width:100%;
+
+}
+
+.nav-links a{
+
+display:block;
+
+padding:12px 0;
+
+font-size:18px;
+
+}
+
+}
