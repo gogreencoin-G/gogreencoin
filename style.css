@@ -234,75 +234,9 @@ ul{
 
 
 
-/* ==========================
-   BADGE
-========================== */
 
-.hero-badge{
 
-    display:inline-flex;
 
-    align-items:center;
-
-    gap:8px;
-
-    padding:10px 22px;
-
-    border-radius:50px;
-
-    background:rgba(34,197,94,.15);
-
-    border:1px solid rgba(34,197,94,.40);
-
-    color:#baf7c8;
-
-    font-size:14px;
-
-    font-weight:600;
-
-    margin-bottom:24px;
-
-}
-
-/* ==========================
-   HERO TITLE
-========================== */
-
-.hero-title{
-
-    font-size:68px;
-
-    font-weight:800;
-
-    line-height:1.08;
-
-    margin-bottom:24px;
-
-    color:#fff;
-
-}
-
-.hero-title span{
-
-    color:var(--primary);
-
-}
-
-/* ==========================
-   HERO DESCRIPTION
-========================== */
-
-.hero-description{
-
-    max-width:650px;
-
-    font-size:19px;
-
-    color:#e7f4ea;
-
-    margin-bottom:40px;
-
-}
 
 
 
