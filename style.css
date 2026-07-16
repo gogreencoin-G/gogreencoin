@@ -233,61 +233,7 @@ ul{
 
 
 
-/* ==========================
-   MENU
-========================== */
 
-.nav-links{
-
-    display:flex;
-
-    align-items:center;
-
-    gap:28px;
-
-}
-
-.nav-links a{
-
-    font-size:15px;
-
-    font-weight:500;
-
-    position:relative;
-
-}
-
-.nav-links a::after{
-
-    content:"";
-
-    position:absolute;
-
-    left:0;
-
-    bottom:-6px;
-
-    width:0;
-
-    height:2px;
-
-    background:var(--primary);
-
-    transition:.35s;
-
-}
-
-.nav-links a:hover{
-
-    color:var(--primary);
-
-}
-
-.nav-links a:hover::after{
-
-    width:100%;
-
-}
 
 /* ==========================
    MOBILE MENU
@@ -455,23 +401,7 @@ height:78px;
 
 
 
-.hero-stat h3{
 
-    color:var(--primary);
-
-    font-size:34px;
-
-    margin-bottom:8px;
-
-}
-
-.hero-stat p{
-
-    color:#d8e7dc;
-
-    font-size:15px;
-
-}
 
 /* ==========================
    SCROLL DOWN
@@ -573,13 +503,7 @@ font-size:52px;
     padding-bottom:60px;
 }
 
-.hero-content{
 
-padding-top:100px;
-
-padding-bottom:60px;
-
-}
 
 .hero-title{
 
