@@ -1781,4 +1781,45 @@ END
 }
 
 
+/* ===== Hero Image Full Screen Fix ===== */
 
+.hero{
+    min-height:100vh;
+    padding-top:82px;
+}
+
+.hero-content{
+    min-height:calc(100vh - 82px);
+    align-items:center;
+}
+
+.hero-image{
+    height:100%;
+}
+
+.hero-image img{
+    width:100%;
+    height:100%;
+    object-fit:contain;
+    max-width:100%;
+    margin:0;
+}
+
+@media (max-width:992px){
+
+.hero{
+    padding-top:90px;
+    min-height:auto;
+}
+
+.hero-content{
+    min-height:auto;
+}
+
+.hero-image img{
+    width:90%;
+    height:auto;
+    margin:auto;
+}
+
+}
