@@ -296,64 +296,6 @@ transform:translate(-50%,0);
 
 
 
-/* ==========================
-   MOBILE
-========================== */
-
-@media(max-width:576px){
-
-.hero-content{
-    padding-top:100px;
-    padding-bottom:60px;
-}
-
-
-
-.hero-title{
-
-font-size:38px;
-
-line-height:1.15;
-
-}
-
-.hero-description{
-
-font-size:16px;
-
-}
-
-.hero-buttons{
-
-flex-direction:column;
-
-}
-
-.hero-buttons .btn{
-
-width:100%;
-
-}
-
-.hero-stats{
-
-grid-template-columns:1fr;
-
-}
-
-.hero-stat{
-
-padding:18px;
-
-}
-
-.hero-stat h3{
-
-font-size:28px;
-
-}
-
-}
 
 
 /* ===================================================
