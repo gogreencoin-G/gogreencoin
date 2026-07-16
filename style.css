@@ -617,15 +617,17 @@ align-items:flex-end;
 
 }
 
-
 .hero-image img{
     width:100%;
-    height:100%;
-    object-fit:cover;
-    max-width:none;
+    height:auto;
+    max-width:100%;
+    object-fit:contain;
+    display:block;
+    margin:0 auto;
     animation:none;
     filter:none;
 }
+
 @keyframes floatLogo{
 
 0%{
