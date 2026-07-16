@@ -451,21 +451,7 @@ height:78px;
 
 
 
-/* ==========================
-   STATS
-========================== */
 
-.hero-stats{
-
-    display:grid;
-
-    grid-template-columns:repeat(4,1fr);
-
-    gap:20px;
-
-    max-width:920px;
-
-}
 
 
 
@@ -580,13 +566,7 @@ font-size:52px;
    MOBILE
 ========================== */
 
-@media(max-width:576px){
 
-.hero{
-
-min-height:760px;
-
-}
 
 .hero-content{
 
