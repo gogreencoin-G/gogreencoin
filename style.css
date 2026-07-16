@@ -232,25 +232,15 @@ Header
 ========================== */
 
 header{
-
-position:fixed;
-
-top:0;
-
-left:0;
-
-width:100%;
-
-z-index:9999;
-
-background:rgba(7,21,12,.92);
-
-backdrop-filter:blur(18px);
-
-border-bottom:1px solid rgba(255,255,255,.06);
-
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    z-index:9999;
+    background:transparent;
+    backdrop-filter:none;
+    border-bottom:none;
 }
-
 nav{
 
 height:82px;
