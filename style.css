@@ -230,31 +230,25 @@ ul{
 /* ==========================
    HEADER
 ========================== */
-
 header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 9999;
 
-    position:fixed;
-    top:0;
-    left:0;
-    width:100%;
+    background: transparent;
+    backdrop-filter: none;
+    -webkit-backdrop-filter: none;
 
-    z-index:9999;
+    border: none;
+    box-shadow: none;
 
-    background:transparent;
+    padding: 18px 0;
 
-    transition:.4s;
-
+    transition: all .35s ease;
 }
 
-header.scrolled{
-
-    background:rgba(5,18,10,.82);
-
-    backdrop-filter:blur(18px);
-
-    border-bottom:1px solid rgba(255,255,255,.08);
-
-}
 
 /* ==========================
    NAVBAR
