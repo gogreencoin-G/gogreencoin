@@ -227,27 +227,7 @@ ul{
 
 }
 
-/* ==========================
-   HEADER
-========================== */
-header{
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    z-index: 9999;
 
-    background: transparent;
-    backdrop-filter: none;
-    -webkit-backdrop-filter: none;
-
-    border: none;
-    box-shadow: none;
-
-    padding: 18px 0;
-
-    transition: all .35s ease;
-}
 
 
 /* ==========================
@@ -441,25 +421,7 @@ height:78px;
    Full Banner Hero
 ========================================================== */
 
-/* ==========================
-   HERO SECTION
-========================== */
 
-.hero{
-
-    position:relative;
-    width:100%;
-    min-height:100vh;
-
-    display:flex;
-    align-items:center;
-
-    overflow:hidden;
-
-    margin:0;
-    padding:0;
-
-}
 
 /* ==========================
    FULL SCREEN BANNER
@@ -476,17 +438,7 @@ height:78px;
 
     z-index:1;
 
-}
 
-.hero-banner img{
-
-    width:100%;
-    height:100%;
-
-    object-fit:cover;
-    object-position:center;
-
-}
 
 /* ==========================
    DARK OVERLAY
