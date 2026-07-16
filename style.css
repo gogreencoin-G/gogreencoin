@@ -773,3 +773,316 @@ max-width:260px;
 }
 
 }
+
+/* ===================================================
+   PART 3
+   ABOUT • ECOSYSTEM • TOKEN UTILITY
+=================================================== */
+
+/* ==========================
+ABOUT SECTION
+========================== */
+
+.about{
+background:var(--bg2);
+}
+
+.about-grid{
+
+display:grid;
+
+grid-template-columns:repeat(3,1fr);
+
+gap:30px;
+
+}
+
+.about-card{
+
+background:linear-gradient(180deg,#14291d,#0d1d13);
+
+padding:40px 30px;
+
+border-radius:var(--radius);
+
+border:1px solid var(--border);
+
+text-align:center;
+
+transition:.35s;
+
+box-shadow:var(--shadow);
+
+}
+
+.about-card:hover{
+
+transform:translateY(-10px);
+
+border-color:var(--primary);
+
+box-shadow:0 20px 40px rgba(34,197,94,.18);
+
+}
+
+.about-card .icon{
+
+width:80px;
+
+height:80px;
+
+margin:0 auto 25px;
+
+display:flex;
+
+align-items:center;
+
+justify-content:center;
+
+border-radius:50%;
+
+background:rgba(34,197,94,.12);
+
+color:var(--primary);
+
+font-size:34px;
+
+}
+
+.about-card h3{
+
+font-size:24px;
+
+margin-bottom:15px;
+
+}
+
+.about-card p{
+
+font-size:15px;
+
+}
+
+/* ==========================
+ECOSYSTEM
+========================== */
+
+.ecosystem{
+
+background:var(--bg);
+
+}
+
+.eco-grid{
+
+display:grid;
+
+grid-template-columns:repeat(3,1fr);
+
+gap:30px;
+
+}
+
+.eco-card{
+
+background:linear-gradient(180deg,#13261b,#0d1d13);
+
+padding:35px;
+
+border-radius:22px;
+
+border:1px solid var(--border);
+
+text-align:center;
+
+transition:.35s;
+
+position:relative;
+
+overflow:hidden;
+
+box-shadow:var(--shadow);
+
+}
+
+.eco-card::before{
+
+content:"";
+
+position:absolute;
+
+top:0;
+
+left:0;
+
+width:100%;
+
+height:4px;
+
+background:var(--primary);
+
+transform:scaleX(0);
+
+transition:.35s;
+
+transform-origin:left;
+
+}
+
+.eco-card:hover::before{
+
+transform:scaleX(1);
+
+}
+
+.eco-card:hover{
+
+transform:translateY(-10px);
+
+border-color:var(--primary);
+
+}
+
+.eco-card i{
+
+font-size:42px;
+
+color:var(--primary);
+
+margin-bottom:22px;
+
+}
+
+.eco-card h3{
+
+font-size:24px;
+
+margin-bottom:15px;
+
+}
+
+.eco-card p{
+
+font-size:15px;
+
+}
+
+/* ==========================
+TOKEN UTILITY
+========================== */
+
+.token-utility{
+
+background:var(--bg2);
+
+}
+
+.utility-grid{
+
+display:grid;
+
+grid-template-columns:repeat(3,1fr);
+
+gap:30px;
+
+}
+
+.utility-card{
+
+background:linear-gradient(180deg,#13261b,#0d1d13);
+
+padding:35px;
+
+border-radius:22px;
+
+border:1px solid var(--border);
+
+text-align:center;
+
+transition:.35s;
+
+box-shadow:var(--shadow);
+
+}
+
+.utility-card:hover{
+
+transform:translateY(-10px);
+
+border-color:var(--primary);
+
+box-shadow:0 18px 40px rgba(34,197,94,.18);
+
+}
+
+.utility-card i{
+
+font-size:42px;
+
+color:var(--primary);
+
+margin-bottom:20px;
+
+}
+
+.utility-card h3{
+
+font-size:24px;
+
+margin-bottom:15px;
+
+}
+
+.utility-card p{
+
+font-size:15px;
+
+}
+
+/* ==========================
+Responsive
+========================== */
+
+@media(max-width:992px){
+
+.about-grid,
+.eco-grid,
+.utility-grid{
+
+grid-template-columns:repeat(2,1fr);
+
+}
+
+}
+
+@media(max-width:576px){
+
+.about-grid,
+.eco-grid,
+.utility-grid{
+
+grid-template-columns:1fr;
+
+gap:20px;
+
+}
+
+.about-card,
+.eco-card,
+.utility-card{
+
+padding:28px 22px;
+
+}
+
+.about-card .icon{
+
+width:70px;
+
+height:70px;
+
+font-size:28px;
+
+}
+
+}
