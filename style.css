@@ -1070,3 +1070,134 @@ font-size:28px;
 }
 
 }
+
+/* ===================================================
+   PART 1E
+   PREMIUM HEADER (CMC / CoinGecko Style)
+=================================================== */
+
+header{
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    z-index:9999;
+
+    background:transparent;
+    border:none;
+    box-shadow:none;
+
+    padding:18px 0;
+    transition:.35s ease;
+}
+
+header.scrolled{
+    background:rgba(5,15,10,.82);
+    backdrop-filter:blur(16px);
+    -webkit-backdrop-filter:blur(16px);
+
+    border-bottom:1px solid rgba(255,255,255,.08);
+}
+
+header .container{
+    max-width:1400px;
+    margin:auto;
+
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+
+    padding:0 28px;
+}
+
+.logo{
+    display:flex;
+    align-items:center;
+    gap:12px;
+
+    text-decoration:none;
+}
+
+.logo img{
+    width:52px;
+    height:52px;
+    border-radius:50%;
+}
+
+.logo span{
+    color:#ffffff;
+    font-size:1.35rem;
+    font-weight:800;
+    letter-spacing:.6px;
+}
+
+nav{
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    width:100%;
+}
+
+.nav-links{
+    display:flex;
+    align-items:center;
+    gap:26px;
+
+    list-style:none;
+}
+
+.nav-links a{
+    color:#ffffff;
+    text-decoration:none;
+
+    font-size:15px;
+    font-weight:600;
+
+    transition:.3s;
+}
+
+.nav-links a:hover{
+    color:#22c55e;
+}
+
+.menu-btn{
+    display:none;
+
+    color:#ffffff;
+    font-size:28px;
+
+    cursor:pointer;
+}
+
+@media(max-width:992px){
+
+.nav-links{
+    position:fixed;
+
+    top:0;
+    right:-100%;
+
+    width:280px;
+    height:100vh;
+
+    background:#08130c;
+
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+
+    gap:28px;
+
+    transition:.35s ease;
+}
+
+.nav-links.active{
+    right:0;
+}
+
+.menu-btn{
+    display:block;
+}
+
+}
