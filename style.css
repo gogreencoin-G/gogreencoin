@@ -677,10 +677,11 @@ order:-1;
 }
 
 .hero-image img{
-
-max-width:330px;
-
+    max-width:none;
+    width:100%;
 }
+
+
 
 .hero-text{
 
@@ -739,11 +740,9 @@ width:100%;
 grid-template-columns:1fr;
 
 }
-
 .hero-image img{
-
-max-width:260px;
-
+    max-width:none;
+    width:100%;
 }
 
 }
