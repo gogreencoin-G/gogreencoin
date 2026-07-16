@@ -652,11 +652,6 @@ text-align:center;
 
 }
 
-.hero-text{
-
-margin:auto;
-
-}
 
 .hero-description{
 
@@ -666,17 +661,9 @@ margin-right:auto;
 
 }
 
-.hero-buttons{
 
-justify-content:center;
 
-}
 
-.hero-stats{
-
-grid-template-columns:repeat(2,1fr);
-
-}
 
 .hero-title{
 
