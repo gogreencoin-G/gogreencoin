@@ -566,7 +566,12 @@ font-size:52px;
    MOBILE
 ========================== */
 
+@media(max-width:576px){
 
+.hero-content{
+    padding-top:100px;
+    padding-bottom:60px;
+}
 
 .hero-content{
 
