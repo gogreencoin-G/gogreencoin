@@ -206,13 +206,7 @@ ul{
 
 }
 
-.btn-primary{
 
-    background:linear-gradient(135deg,#2ce86b,#16a34a);
-    color:#fff;
-    box-shadow:0 12px 28px rgba(34,197,94,.35);
-
-}
 
 .btn-outline{
 
@@ -366,46 +360,7 @@ transform:translate(-50%,0);
 
 }
 
-/* ==========================
-   TABLET
-========================== */
 
-@media(max-width:992px){
-
-.hero{
-
-min-height:850px;
-
-}
-
-.hero-content{
-
-padding-top:120px;
-
-text-align:center;
-
-}
-
-
-.hero-description{
-
-margin-left:auto;
-
-margin-right:auto;
-
-}
-
-
-
-
-
-.hero-title{
-
-font-size:52px;
-
-}
-
-}
 
 /* ==========================
    MOBILE
