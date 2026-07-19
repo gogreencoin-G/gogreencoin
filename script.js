@@ -280,27 +280,3 @@ console.log("%c🌱 Welcome to Go Green (G Coin)",
 console.log("%cOne Community. One Mission. One Greener Future.",
 "color:white;font-size:14px;");
 
-/* ==========================================
-   Premium Climate Video
-========================================== */
-
-const thumb = document.getElementById("videoThumb");
-const frame = document.getElementById("videoFrame");
-
-if (thumb && frame) {
-
-    thumb.addEventListener("click", () => {
-
-        const iframe = frame.querySelector("iframe");
-
-        if (!iframe.src) {
-    iframe.src = iframe.dataset.src;
-}
-
-        thumb.style.display = "none";
-
-        frame.style.display = "block";
-
-    });
-
-}
