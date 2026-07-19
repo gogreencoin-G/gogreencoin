@@ -293,7 +293,9 @@ if (thumb && frame) {
 
         const iframe = frame.querySelector("iframe");
 
-        iframe.src = iframe.dataset.src;
+        if (!iframe.src) {
+    iframe.src = iframe.dataset.src;
+}
 
         thumb.style.display = "none";
 
