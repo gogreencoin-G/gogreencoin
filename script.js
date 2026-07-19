@@ -81,36 +81,34 @@ window.addEventListener("scroll", () => {
 
 const backToTop = document.getElementById("backToTop");
 
-window.addEventListener("scroll", () => {
+if (backToTop) {
 
-    if (window.scrollY > 500) {
+    window.addEventListener("scroll", () => {
 
-        backToTop.style.display = "flex";
+        if (window.scrollY > 500) {
 
-    } else {
+            backToTop.style.display = "flex";
 
-        backToTop.style.display = "none";
+        } else {
 
-    }
+            backToTop.style.display = "none";
 
-});
-
-backToTop.addEventListener("click", () => {
-
-    window.scrollTo({
-
-        top: 0,
-
-        behavior: "smooth"
+        }
 
     });
 
-});
-/* ==========================================
-   GO GREEN (G Coin)
-   Premium Website v2.0
-   script.js - Part 2
-==========================================*/
+    backToTop.addEventListener("click", () => {
+
+        window.scrollTo({
+
+            top: 0,
+            behavior: "smooth"
+
+        });
+
+    });
+
+}
 
 // ================================
 // Scroll Reveal Animation
