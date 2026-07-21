@@ -499,6 +499,7 @@ nav{
 
 .hero-text p{
     max-width:650px;
+    margin:0 auto;
     font-size:1.08rem;
     color:#d7e8dc;
     line-height:1.8;
@@ -632,9 +633,7 @@ nav{
         gap:15px;
     }
 
-    .hero-buttons .btn{
-        width:100%;
-    }
+
 
     .hero-stats{
         grid-template-columns:repeat(2,1fr);
