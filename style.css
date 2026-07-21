@@ -407,14 +407,13 @@ nav{
    HERO SECTION
 ========================== */
 
+
 .hero{
     position:relative;
     width:100%;
-    min-height:100vh;
+    min-height:160vh;
     overflow:hidden;
     background:#07140b;
-    display:flex;
-    align-items:center;
 }
 
 .hero-banner{
