@@ -169,16 +169,6 @@ ul{
     transform:translateY(-4px);
 }
 
-.btn-primary{
-    background:var(--primary);
-    color:#fff;
-    box-shadow:0 12px 30px rgba(34,197,94,.35);
-}
-
-.btn-primary:hover{
-    background:var(--primary-dark);
-}
-
 .btn-outline{
     border:2px solid var(--primary);
     background:transparent;
