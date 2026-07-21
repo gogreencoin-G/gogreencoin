@@ -458,6 +458,12 @@ nav{
     max-width:1200px;
     margin:0 auto;
     padding:70px 20px 80px;
+
+    background:
+        linear-gradient(rgba(7,20,11,.75), rgba(7,20,11,.75)),
+        url("gallery2.jpg.png") center/cover no-repeat;
+
+    border-radius:24px;
 }
 .hero-text{
     max-width:900px;
