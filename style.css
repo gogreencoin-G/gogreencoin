@@ -1520,7 +1520,7 @@ nav{
 .mb-4{margin-bottom:40px;}
 .mb-5{margin-bottom:60px;}
 
-de-in{
+.fade-in{
     animation:fadeIn .8s ease both;
 }
 
