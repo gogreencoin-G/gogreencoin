@@ -447,11 +447,14 @@ nav{
     position:relative;
     z-index:3;
     width:100%;
-    padding:140px 0 80px;
+    padding-top:720px;
+    padding-bottom:100px;
 }
 
 .hero-text{
-    max-width:720px;
+    max-width:900px;
+    margin:auto;
+    text-align:center;
 }
 
 .badge{
@@ -492,6 +495,7 @@ nav{
 .hero-buttons{
     display:flex;
     flex-wrap:wrap;
+    justify-content:center;
     gap:16px;
     margin-top:35px;
 }
@@ -540,7 +544,8 @@ nav{
     display:grid;
     grid-template-columns:repeat(4,1fr);
     gap:20px;
-    margin-top:55px;
+    max-width:1000px;
+    margin:60px auto 0;
 }
 
 .stat-box{
