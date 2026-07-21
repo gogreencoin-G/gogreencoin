@@ -1921,3 +1921,58 @@ line-height:1.8;
 }
 
 }
+
+/* ==========================================
+   WHITEPAPER MOBILE FIX
+========================================== */
+
+@media (max-width:768px){
+
+    .cover{
+        min-height:100vh;
+        padding:120px 20px 70px;
+        background-position:center;
+    }
+
+    .cover-content{
+        width:100%;
+        padding:35px 22px;
+        border-radius:22px;
+        backdrop-filter:blur(20px);
+    }
+
+    .cover-logo{
+        width:85px;
+        margin-bottom:20px;
+    }
+
+    .cover-title,
+    .cover h1{
+        font-size:2.2rem;
+        line-height:1.2;
+        word-break:break-word;
+    }
+
+    .cover-title span{
+        display:block;
+    }
+
+    .cover-tagline,
+    .tagline{
+        font-size:16px;
+        line-height:1.7;
+        margin:20px 0 30px;
+    }
+
+    .cover-btn{
+        width:100%;
+        text-align:center;
+        padding:15px;
+    }
+
+    .cover-badge{
+        font-size:12px;
+        padding:8px 14px;
+    }
+
+}
