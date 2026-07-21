@@ -1609,3 +1609,44 @@ nav{
 
 }
 
+
+/* Whitepaper Page */
+
+body{
+    margin:0;
+    padding:0;
+}
+
+.whitepaper-container{
+    max-width:1100px;
+    margin:0 auto;
+    padding:30px 20px;
+}
+
+.whitepaper-container img{
+    width:100%;
+    height:auto;
+    display:block;
+}
+
+.whitepaper-container h1,
+.whitepaper-container h2,
+.whitepaper-container h3,
+.whitepaper-container p,
+.whitepaper-container ul{
+    margin-left:0;
+    margin-right:0;
+}
+
+@media (max-width:768px){
+
+.whitepaper-container{
+    padding:20px 16px;
+}
+
+.whitepaper-container img{
+    width:100%;
+    height:auto;
+}
+
+}
