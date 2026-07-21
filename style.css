@@ -1520,11 +1520,7 @@ nav{
 .mb-4{margin-bottom:40px;}
 .mb-5{margin-bottom:60px;}
 
-.fade-up{
-    animation:fadeUp .8s ease both;
-}
-
-.fade-in{
+de-in{
     animation:fadeIn .8s ease both;
 }
 
