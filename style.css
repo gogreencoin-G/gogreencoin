@@ -666,5 +666,965 @@ nav{
 
 }
 
+/* ==========================================================
+   GO GREEN (G Coin)
+   Premium Responsive Style v3.0
+   PART 3A
+   Whitepaper Base • Glass Card • Typography • Grid
+==========================================================*/
 
+/* ==========================
+   WHITEPAPER SECTION
+========================== */
+
+.whitepaper{
+    position:relative;
+    padding:100px 0;
+    background:linear-gradient(
+        180deg,
+        var(--bg),
+        var(--bg2)
+    );
+}
+
+.whitepaper::before{
+    content:"";
+    position:absolute;
+    top:-180px;
+    right:-180px;
+    width:420px;
+    height:420px;
+    background:radial-gradient(
+        circle,
+        rgba(34,197,94,.12),
+        transparent 70%
+    );
+    pointer-events:none;
+}
+
+/* ==========================
+   SECTION TITLE
+========================== */
+
+.whitepaper .section-title{
+    text-align:center;
+    margin-bottom:70px;
+}
+
+.whitepaper .section-title h2{
+    font-size:46px;
+    font-weight:800;
+    color:#fff;
+    margin-bottom:18px;
+}
+
+.whitepaper .section-title p{
+    max-width:760px;
+    margin:auto;
+    color:#b9d8c3;
+    line-height:1.8;
+}
+
+/* ==========================
+   GLASS CARD
+========================== */
+
+.whitepaper-card{
+
+    position:relative;
+
+    background:rgba(255,255,255,.05);
+
+    backdrop-filter:blur(18px);
+    -webkit-backdrop-filter:blur(18px);
+
+    border:1px solid rgba(255,255,255,.08);
+
+    border-radius:24px;
+
+    padding:40px;
+
+    overflow:hidden;
+
+    transition:.35s ease;
+
+    box-shadow:0 18px 45px rgba(0,0,0,.30);
+
+}
+
+.whitepaper-card::before{
+
+    content:"";
+
+    position:absolute;
+    inset:0;
+
+    padding:1px;
+
+    border-radius:24px;
+
+    background:linear-gradient(
+        135deg,
+        rgba(34,197,94,.50),
+        rgba(255,255,255,.05),
+        rgba(34,197,94,.15)
+    );
+
+    -webkit-mask:
+        linear-gradient(#fff 0 0) content-box,
+        linear-gradient(#fff 0 0);
+
+    -webkit-mask-composite:xor;
+    mask-composite:exclude;
+
+    pointer-events:none;
+
+}
+
+.whitepaper-card:hover{
+
+    transform:translateY(-10px);
+
+    border-color:rgba(34,197,94,.30);
+
+    box-shadow:
+        0 24px 60px rgba(34,197,94,.15);
+
+}
+
+/* ==========================
+   TYPOGRAPHY
+========================== */
+
+.whitepaper-card h3{
+
+    color:var(--primary);
+
+    font-size:28px;
+
+    margin-bottom:20px;
+
+    font-weight:700;
+
+}
+
+.whitepaper-card h4{
+
+    color:#8ef6b3;
+
+    margin-bottom:15px;
+
+}
+
+.whitepaper-card p{
+
+    color:var(--text);
+
+    line-height:1.9;
+
+    margin-bottom:18px;
+
+}
+
+.whitepaper-card ul{
+
+    padding-left:18px;
+
+}
+
+.whitepaper-card li{
+
+    margin-bottom:12px;
+
+    color:var(--text);
+
+    line-height:1.8;
+
+}
+
+/* ==========================
+   GRID
+========================== */
+
+.vision-grid,
+.problem-grid,
+.ecosystem-grid,
+.roadmap-grid{
+
+    display:grid;
+
+    grid-template-columns:
+    repeat(auto-fit,minmax(320px,1fr));
+
+    gap:28px;
+
+}
+
+/* ==========================
+   ICONS
+========================== */
+
+.vision-icon,
+.problem-icon,
+.eco-icon{
+
+    width:70px;
+    height:70px;
+
+    display:flex;
+    align-items:center;
+    justify-content:center;
+
+    border-radius:18px;
+
+    font-size:30px;
+
+    color:var(--primary);
+
+    background:rgba(34,197,94,.12);
+
+    border:1px solid rgba(34,197,94,.20);
+
+    margin-bottom:20px;
+
+    box-shadow:
+        0 0 20px rgba(34,197,94,.12);
+
+}
+
+/* ==========================================================
+   GO GREEN (G Coin)
+   Premium Responsive Style v3.0
+   PART 3B
+   Token Table • Token Stats • Roadmap • Premium Button
+========================================================== */
+
+/* ==========================
+   TOKEN TABLE
+========================== */
+
+.token-table{
+    width:100%;
+    border-collapse:collapse;
+    margin-top:30px;
+    overflow:hidden;
+    border-radius:20px;
+}
+
+.token-table th{
+    background:linear-gradient(
+        135deg,
+        var(--primary),
+        var(--primary-dark)
+    );
+    color:#fff;
+    padding:18px;
+    text-align:left;
+    font-size:15px;
+    font-weight:700;
+}
+
+.token-table td{
+    padding:18px;
+    color:var(--text);
+    background:rgba(255,255,255,.03);
+    border-bottom:1px solid rgba(255,255,255,.06);
+}
+
+.token-table tr:hover td{
+    background:rgba(34,197,94,.08);
+}
+
+/* ==========================
+   TOKEN STATS
+========================== */
+
+.token-stats{
+
+    display:grid;
+
+    grid-template-columns:
+    repeat(auto-fit,minmax(220px,1fr));
+
+    gap:24px;
+
+    margin:55px 0;
+
+}
+
+.stat-card{
+
+    position:relative;
+
+    background:rgba(255,255,255,.05);
+
+    backdrop-filter:blur(18px);
+
+    border:1px solid rgba(255,255,255,.08);
+
+    border-radius:22px;
+
+    padding:35px 20px;
+
+    text-align:center;
+
+    overflow:hidden;
+
+    transition:.35s ease;
+
+}
+
+.stat-card::before{
+
+    content:"";
+
+    position:absolute;
+    inset:0;
+
+    background:linear-gradient(
+        135deg,
+        rgba(34,197,94,.15),
+        transparent
+    );
+
+    opacity:0;
+
+    transition:.35s;
+
+}
+
+.stat-card:hover::before{
+
+    opacity:1;
+
+}
+
+.stat-card:hover{
+
+    transform:translateY(-10px);
+
+    border-color:rgba(34,197,94,.35);
+
+    box-shadow:
+        0 20px 55px rgba(34,197,94,.18);
+
+}
+
+.stat-card h3{
+
+    color:var(--primary);
+
+    font-size:2.4rem;
+
+    margin-bottom:10px;
+
+    font-weight:800;
+
+}
+
+.stat-card p{
+
+    color:var(--text);
+
+    font-size:15px;
+
+}
+
+/* ==========================
+   ROADMAP YEAR
+========================== */
+
+.roadmap-year{
+
+    display:inline-block;
+
+    padding:8px 18px;
+
+    border-radius:50px;
+
+    background:linear-gradient(
+        135deg,
+        var(--primary),
+        var(--primary-dark)
+    );
+
+    color:#fff;
+
+    font-size:14px;
+
+    font-weight:700;
+
+    margin-bottom:20px;
+
+}
+
+/* ==========================
+   PREMIUM BUTTON
+========================== */
+
+.cover-btn{
+
+    display:inline-flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    gap:10px;
+
+    padding:18px 40px;
+
+    border-radius:999px;
+
+    background:linear-gradient(
+        135deg,
+        var(--primary),
+        var(--primary-dark)
+    );
+
+    color:#fff;
+
+    font-weight:700;
+
+    transition:.35s ease;
+
+    box-shadow:
+        0 18px 40px rgba(34,197,94,.25);
+
+}
+
+.cover-btn:hover{
+
+    transform:translateY(-5px);
+
+    box-shadow:
+        0 28px 60px rgba(34,197,94,.35);
+
+}
+
+/* ==========================================================
+   GO GREEN (G Coin)
+   Premium Responsive Style v3.0
+   PART 3C
+   Contact • Glow • Animation • Mobile
+========================================================== */
+
+/* ==========================
+   CONTACT
+========================== */
+
+#contact .whitepaper-card{
+    text-align:center;
+}
+
+#contact h3{
+    color:var(--primary);
+    margin-top:20px;
+}
+
+#contact p{
+    color:var(--text);
+    word-break:break-word;
+}
+
+#contact a{
+    color:#8ef6b3;
+    transition:.3s ease;
+}
+
+#contact a:hover{
+    color:var(--primary);
+}
+
+/* ==========================
+   PREMIUM GLOW
+========================== */
+
+.glow{
+    position:relative;
+}
+
+.glow::before{
+    content:"";
+    position:absolute;
+    inset:-3px;
+    border-radius:24px;
+    background:linear-gradient(
+        135deg,
+        rgba(34,197,94,.30),
+        transparent,
+        rgba(34,197,94,.18)
+    );
+    filter:blur(18px);
+    opacity:0;
+    transition:.35s ease;
+    z-index:-1;
+}
+
+.glow:hover::before{
+    opacity:1;
+}
+
+/* ==========================
+   FADE UP
+========================== */
+
+.fade-up{
+    opacity:0;
+    transform:translateY(35px);
+    transition:all .8s ease;
+}
+
+.fade-up.show{
+    opacity:1;
+    transform:translateY(0);
+}
+
+/* ==========================
+   ROADMAP CARD
+========================== */
+
+.roadmap-card{
+    position:relative;
+    overflow:hidden;
+}
+
+.roadmap-card::after{
+    content:"";
+    position:absolute;
+    left:0;
+    top:0;
+    width:5px;
+    height:100%;
+    background:var(--primary);
+}
+
+/* ==========================
+   MOBILE TABLE
+========================== */
+
+@media (max-width:768px){
+
+.token-table{
+    display:block;
+    overflow-x:auto;
+    white-space:nowrap;
+}
+
+.token-table th,
+.token-table td{
+    white-space:nowrap;
+}
+
+}
+
+/* ==========================
+   MOBILE GRID
+========================== */
+
+@media (max-width:768px){
+
+.vision-grid,
+.problem-grid,
+.ecosystem-grid,
+.roadmap-grid,
+.token-stats{
+
+    grid-template-columns:1fr;
+
+}
+
+.whitepaper-card{
+
+    padding:24px;
+
+}
+
+.stat-card{
+
+    padding:28px 20px;
+
+}
+
+.section-title h2{
+
+    font-size:34px;
+
+}
+
+.section-title p{
+
+    font-size:15px;
+
+}
+
+}
+
+/* ==========================
+   SMALL MOBILE
+========================== */
+
+@media (max-width:480px){
+
+.whitepaper{
+
+    padding:70px 0;
+
+}
+
+.whitepaper-card{
+
+    border-radius:18px;
+    padding:20px;
+
+}
+
+.whitepaper-card h3{
+
+    font-size:22px;
+
+}
+
+.whitepaper-card p,
+.whitepaper-card li{
+
+    font-size:14px;
+    line-height:1.8;
+
+}
+
+.stat-card h3{
+
+    font-size:2rem;
+
+}
+
+.cover-btn{
+
+    width:100%;
+
+}
+
+}
+
+/* ==========================================================
+   GO GREEN (G Coin)
+   Premium Responsive Style v3.0
+   PART 4
+   Footer • Animation • Utility • Responsive
+========================================================== */
+
+/* ==========================
+   FOOTER
+========================== */
+
+.footer{
+    position:relative;
+    background:linear-gradient(
+        180deg,
+        #08130c,
+        #050b07
+    );
+    padding:80px 0 30px;
+    border-top:1px solid rgba(255,255,255,.08);
+}
+
+.footer-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:40px;
+    margin-bottom:50px;
+}
+
+.footer-logo{
+    display:flex;
+    align-items:center;
+    gap:12px;
+    margin-bottom:18px;
+}
+
+.footer-logo img{
+    width:55px;
+    height:55px;
+    border-radius:50%;
+}
+
+.footer-logo h3{
+    color:#fff;
+    font-size:24px;
+    font-weight:700;
+}
+
+.footer p{
+    color:var(--text);
+    line-height:1.8;
+}
+
+.footer h4{
+    color:#fff;
+    margin-bottom:18px;
+    font-size:18px;
+}
+
+.footer-links{
+    list-style:none;
+}
+
+.footer-links li{
+    margin-bottom:12px;
+}
+
+.footer-links a{
+    color:var(--text);
+    transition:.3s ease;
+}
+
+.footer-links a:hover{
+    color:var(--primary);
+    padding-left:6px;
+}
+
+/* ==========================
+   SOCIAL ICONS
+========================== */
+
+.social-links{
+    display:flex;
+    gap:15px;
+    margin-top:20px;
+}
+
+.social-links a{
+    width:46px;
+    height:46px;
+
+    display:flex;
+    align-items:center;
+    justify-content:center;
+
+    border-radius:50%;
+
+    background:rgba(255,255,255,.06);
+
+    border:1px solid rgba(255,255,255,.08);
+
+    color:#fff;
+
+    transition:.35s ease;
+}
+
+.social-links a:hover{
+
+    background:var(--primary);
+
+    color:#fff;
+
+    transform:translateY(-5px);
+
+    box-shadow:
+    0 12px 30px rgba(34,197,94,.30);
+
+}
+
+/* ==========================
+   COPYRIGHT
+========================== */
+
+.footer-bottom{
+
+    border-top:1px solid rgba(255,255,255,.08);
+
+    padding-top:25px;
+
+    text-align:center;
+
+}
+
+.footer-bottom p{
+
+    color:#a7c3af;
+
+    font-size:14px;
+
+}
+
+/* ==========================
+   GLOBAL ANIMATION
+========================== */
+
+@keyframes fadeIn{
+
+    from{
+
+        opacity:0;
+
+    }
+
+    to{
+
+        opacity:1;
+
+    }
+
+}
+
+@keyframes fadeUp{
+
+    from{
+
+        opacity:0;
+
+        transform:translateY(35px);
+
+    }
+
+    to{
+
+        opacity:1;
+
+        transform:translateY(0);
+
+    }
+
+}
+
+@keyframes pulseGlow{
+
+    0%{
+
+        box-shadow:0 0 0 rgba(34,197,94,.15);
+
+    }
+
+    50%{
+
+        box-shadow:0 0 25px rgba(34,197,94,.35);
+
+    }
+
+    100%{
+
+        box-shadow:0 0 0 rgba(34,197,94,.15);
+
+    }
+
+}
+
+/* ==========================
+   UTILITY
+========================== */
+
+.text-center{
+    text-align:center;
+}
+
+.mt-1{margin-top:10px;}
+.mt-2{margin-top:20px;}
+.mt-3{margin-top:30px;}
+.mt-4{margin-top:40px;}
+.mt-5{margin-top:60px;}
+
+.mb-1{margin-bottom:10px;}
+.mb-2{margin-bottom:20px;}
+.mb-3{margin-bottom:30px;}
+.mb-4{margin-bottom:40px;}
+.mb-5{margin-bottom:60px;}
+
+.fade-up{
+    animation:fadeUp .8s ease both;
+}
+
+.fade-in{
+    animation:fadeIn .8s ease both;
+}
+
+.glow-animation{
+    animation:pulseGlow 3s infinite;
+}
+
+/* ==========================
+   RESPONSIVE
+========================== */
+
+@media (max-width:992px){
+
+.footer-grid{
+
+    grid-template-columns:repeat(2,1fr);
+
+}
+
+}
+
+@media (max-width:768px){
+
+.footer{
+
+    padding:60px 0 25px;
+
+}
+
+.footer-grid{
+
+    grid-template-columns:1fr;
+
+    text-align:center;
+
+}
+
+.footer-logo{
+
+    justify-content:center;
+
+}
+
+.social-links{
+
+    justify-content:center;
+
+}
+
+.footer-links{
+
+    padding:0;
+
+}
+
+}
+
+@media (max-width:480px){
+
+.footer h3{
+
+    font-size:22px;
+
+}
+
+.footer h4{
+
+    font-size:17px;
+
+}
+
+.footer p,
+.footer-links a{
+
+    font-size:14px;
+
+}
+
+.footer-bottom p{
+
+    font-size:13px;
+
+}
+
+.social-links a{
+
+    width:42px;
+    height:42px;
+
+}
+
+}
 
