@@ -268,51 +268,42 @@ header .container{
 ========================================================== */
 
 nav{
-
     display:flex;
-
+    justify-content:space-between;
     align-items:center;
+    width:100%;
+}
 
+.logo{
+    display:flex;
+    align-items:center;
+    gap:10px;
 }
 
 .nav-links{
-
     display:flex;
-
     align-items:center;
-
     gap:28px;
-
+    margin-left:auto;
 }
 
 .nav-links a{
-
     color:#fff;
-
     font-size:15px;
-
     font-weight:600;
-
     transition:var(--transition);
-
 }
 
 .nav-links a:hover{
-
     color:var(--primary);
-
 }
 
 .menu-btn{
-
     display:none;
-
+    margin-left:20px;
     font-size:30px;
-
     color:#fff;
-
     cursor:pointer;
-
 }
 
 /* ==========================================================
