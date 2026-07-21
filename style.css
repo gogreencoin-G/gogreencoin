@@ -603,79 +603,109 @@ nav{
 
 @media (max-width:992px){
 
-.hero-content{
-    padding:120px 0 60px;
-}
+    .hero{
+        min-height:auto;
+    }
 
-.hero-buttons{
-    flex-direction:column;
-}
+    .hero-banner img{
+        max-height:500px;
+    }
 
-.hero-buttons .btn{
-    width:100%;
-}
+    .hero-content{
+        padding:60px 20px 60px;
+    }
 
-.hero-stats{
-    grid-template-columns:repeat(2,1fr);
-}
+    .hero-text{
+        max-width:100%;
+    }
+
+    .hero-text h1{
+        font-size:2.8rem;
+    }
+
+    .hero-text p{
+        font-size:16px;
+    }
+
+    .hero-buttons{
+        flex-direction:column;
+        gap:15px;
+    }
+
+    .hero-buttons .btn{
+        width:100%;
+    }
+
+    .hero-stats{
+        grid-template-columns:repeat(2,1fr);
+        gap:18px;
+        margin-top:45px;
+    }
 
 }
 
 @media (max-width:768px){
 
-.hero{
-    min-height:100vh;
-}
+    .hero-banner img{
+        max-height:380px;
+    }
 
-.hero-text{
-    text-align:center;
-    margin:auto;
-}
+    .hero-content{
+        padding:45px 18px 50px;
+    }
 
-.hero-text h1{
-    font-size:2.4rem;
-}
+    .hero-text{
+        text-align:center;
+    }
 
-.hero-text p{
-    font-size:15px;
-}
+    .hero-text h1{
+        font-size:2.2rem;
+        line-height:1.2;
+    }
 
-.badge{
-    margin-left:auto;
-    margin-right:auto;
-}
+    .hero-text p{
+        font-size:15px;
+        line-height:1.7;
+    }
 
-.hero-stats{
-    grid-template-columns:1fr;
-    gap:16px;
-}
+    .badge{
+        margin:0 auto 20px;
+    }
 
-.hero-content{
-    padding:110px 0 50px;
-}
+    .hero-buttons{
+        gap:14px;
+    }
+
+    .hero-stats{
+        grid-template-columns:1fr;
+        gap:16px;
+    }
 
 }
 
 @media (max-width:480px){
 
-.hero-text h1{
-    font-size:2rem;
-}
+    .hero-banner img{
+        max-height:280px;
+    }
 
-.hero-text p{
-    font-size:14px;
-}
+    .hero-content{
+        padding:35px 15px 40px;
+    }
 
-.hero-content{
-    padding:100px 0 40px;
-}
+    .hero-text h1{
+        font-size:1.9rem;
+    }
 
-.stat-box{
-    padding:20px;
-}
+    .hero-text p{
+        font-size:14px;
+    }
+
+    .stat-box{
+        padding:20px;
+    }
 
 }
-
 /* ==========================================================
    GO GREEN (G Coin)
    Premium Responsive Style v3.0
