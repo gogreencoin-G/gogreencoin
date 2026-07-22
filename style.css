@@ -1722,11 +1722,6 @@ body{
     margin:0 auto;
 }
 /* Whitepaper Text Readability */
-
-
-
-
-
 .whitepaper-card p,
 .whitepaper-card li{
     line-height:1.9;
@@ -1735,7 +1730,7 @@ body{
 /* Whitepaper Card Fix */
 
 .whitepaper-card{
-    padding:40px 60px !important;
+    padding:40px 80px !important;
 }
 
 @media (max-width:768px){
